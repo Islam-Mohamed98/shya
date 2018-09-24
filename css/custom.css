@@ -2,3 +2,103 @@
 	Theme Name : Kewa
 	Author Name : Eva
 */
+
+body {overflow: hidden;}
+
+/* Start Info */
+.info {position: fixed;width:15%;}
+
+.info img {margin-top: 33%;padding: 20px;}
+
+.info i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* End Info*/
+
+/* Start Content */
+.content {}
+/* End Content */
+
+/* Start Navbar */
+nav.navbar {padding: 0;padding-top: 3%;background-color:white;}
+
+nav i.fa-plus {
+    display: none;
+    position: relative;
+    top: -43px;
+    font-size: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+nav ul {margin: 0 auto;}
+
+nav ul li {
+    padding: 5px 20px;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a {transition: all 0.5s;}
+
+nav ul li.active {transform: translate(0, 100px) scale(2, 2);border-bottom: 1px solid white;}
+
+nav ul li.active a {color: white !important;}
+/* End Navbar*/
+
+/* ===================[ Start Section ]===================[ */
+.sections > div  {display: none; height: 100%;}
+.sections .about-me {display: block;}
+
+/* Start About-Me */
+.about-me {
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* End About-Me */
+
+/*Start Resume */
+.resume {
+   background: #ffb347;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*End Resume */
+
+/*Start Portfolio */
+.portfolio {
+   background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*End Portfolio */
+
+/*Start Ham */
+.ham {
+    background: #FFB75E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*End Ham */
+
+/*Start Contact */
+.contact {
+    background: #e53935;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*End Contact */
+
+/* ===================[ End Section ]===================[ */
+
+
