@@ -29,20 +29,19 @@ body {overflow: hidden;}
 /* End Info*/
 
 /* Start Content */
-.content {}
+.content i.fa-plus {
+    display: none;
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    left: 10px;
+    cursor: pointer;
+}
 /* End Content */
 
 /* Start Navbar */
 nav.navbar {padding: 0;background:transparent;position:fixed;}
 
-nav i.fa-plus {
-    display: none;
-    position: relative;
-    top: -20px;
-    font-size: 20px;
-    left: 10px;
-    cursor: pointer;
-}
 
 nav ul {margin: 0 auto;}
 
@@ -63,7 +62,6 @@ nav ul li.active a {color: white !important;}
 /* ===================[ Start Section ]===================[ */
 .sections {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 2px;
 }
 
 .sections > div  {display: none; height: 100%;}
