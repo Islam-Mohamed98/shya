@@ -23,14 +23,16 @@ $(function () {
 
 	// Switching Between Sections
 	$('nav li').click(function () {
-		$(this).addClass('active').siblings().removeClass('active'); // Add Class Active To Li
+		$(this).addClass('active').siblings().hide().removeClass('active'); // Add Class Active To Li
 		$($(this).data('sec')).siblings().slideUp(500, function () { // FadeOut All Sibling Sections
-			$($('nav li.active').data('sec')).slideDown(500); // FadeIn Selected Section
+			$($('nav li.active').data('sec')).slideDown(500, function () { // FadeIn Selected Section
+				$('nav li').show();
+			}); 
 		});
 	});
 
 	// Close Link
-	$('.info i').click(function () {
+	$('.info i.fa-times').click(function () {
 		$(this).hide();
 		$('.info').animate({
 			width: 0

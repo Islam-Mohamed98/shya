@@ -8,9 +8,18 @@ body {overflow: hidden;}
 /* Start Info */
 .info {position: fixed;width:15%;}
 
-.info img {margin-top: 33%;padding: 20px;}
+.info .img {
+    padding: 20px;
+}
 
-.info i {
+.info img {margin-top: 21%;}
+
+.info .img .social-icons i {
+    padding: 0;
+}
+
+
+.info > i.fa-times {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -24,12 +33,12 @@ body {overflow: hidden;}
 /* End Content */
 
 /* Start Navbar */
-nav.navbar {padding: 0;padding-top: 3%;background-color:white;}
+nav.navbar {padding: 0;padding-top: 1%;background-color:white;}
 
 nav i.fa-plus {
     display: none;
     position: relative;
-    top: -43px;
+    top: -20px;
     font-size: 20px;
     left: 10px;
     cursor: pointer;
@@ -46,37 +55,64 @@ nav ul li {
 
 nav ul li a {transition: all 0.5s;}
 
-nav ul li.active {transform: translate(0, 100px) scale(2, 2);border-bottom: 1px solid white;}
+nav ul li.active {transform: translate(0, 70px) scale(2, 2);border-bottom: 1px solid white;}
 
 nav ul li.active a {color: white !important;}
 /* End Navbar*/
 
 /* ===================[ Start Section ]===================[ */
+.sections {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2px;
+}
+
 .sections > div  {display: none; height: 100%;}
 .sections .about-me {display: block;}
 
+.sections .container {position: relative;top: 130px;}
+
 /* Start About-Me */
 .about-me {
+    color: white;
+    overflow: auto;
     background: #fd746c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.about-me img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.about-me h3 {
+    letter-spacing: 2px;
+}
+
+.about-me h5 {
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.about-me p {
+    line-height: 1.7;
+    margin-top: 20px;
+    letter-spacing: 1px;
 }
 /* End About-Me */
 
 /*Start Resume */
 .resume {
    background: #ffb347;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 /*End Resume */
 
 /*Start Portfolio */
 .portfolio {
-   background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 /*End Portfolio */
@@ -84,8 +120,8 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
 /*Start Ham */
 .ham {
     background: #FFB75E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 /*End Ham */
@@ -93,8 +129,8 @@ background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, F
 /*Start Contact */
 .contact {
     background: #e53935;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 /*End Contact */
