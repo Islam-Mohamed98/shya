@@ -10,10 +10,10 @@ $(function () {
 	$('.info, .content').height($(window).height()); // Adust Div Size 
 
 	$('.content').css('margin-left', infoH); // Margin-Left of Content
-
+	$('nav.navbar').css('margin-left', infoH); // Margin-Left of Content
 	// Calc Nav Outer Height And Add Width To Div Sections
 
-	$('.sections, .test').height($(window).height() - navH) // Add Height To Sections
+	$('.sections, .test').height($(window).height()) // Add Height To Sections
 
 	$( window ).resize(function() {
   		$('.info, .content, .sections').height($(window).height()); // Adust Div Size

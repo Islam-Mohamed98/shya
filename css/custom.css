@@ -33,7 +33,7 @@ body {overflow: hidden;}
 /* End Content */
 
 /* Start Navbar */
-nav.navbar {padding: 0;padding-top: 1%;background-color:white;}
+nav.navbar {padding: 0;background:transparent;position:fixed;}
 
 nav i.fa-plus {
     display: none;
@@ -69,7 +69,7 @@ nav ul li.active a {color: white !important;}
 .sections > div  {display: none; height: 100%;}
 .sections .about-me {display: block;}
 
-.sections .container {position: relative;top: 130px;}
+.sections .container {position: relative;top: 166px;}
 
 /* Start About-Me */
 .about-me {
