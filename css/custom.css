@@ -46,15 +46,15 @@ nav.navbar {padding: 0;background:transparent;position:fixed;}
 nav ul {margin: 0 auto;}
 
 nav ul li {
-    padding: 5px 20px;
+    padding: 5px 35px;
     transition: all 0.5s;
     transition-delay: 0.5s;
     border-bottom: 1px solid transparent;
 }
 
-nav ul li a {transition: all 0.5s;}
+nav ul li a {transition: all 0.5s;font-weight: bold;}
 
-nav ul li.active {transform: translate(0, 70px) scale(2, 2);border-bottom: 1px solid white;}
+nav ul li.active {transform: translate(0, 50px) scale(2, 2);border-bottom: 1px solid white;}
 
 nav ul li.active a {color: white !important;}
 /* End Navbar*/
@@ -70,6 +70,11 @@ nav ul li.active a {color: white !important;}
 .sections .container {position: relative;top: 166px;}
 
 /* Start About-Me */
+.about-me .anim {
+    width: 0;
+    overflow:hidden;
+}
+
 .about-me {
     color: white;
     overflow: auto;
@@ -78,9 +83,16 @@ nav ul li.active a {color: white !important;}
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
+.about-me .con-img {
+    padding: 0;
+}
 .about-me img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
+.about-me .bg {
+    background: #4e4e4e;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .about-me h3 {
     letter-spacing: 2px;
 }
@@ -95,24 +107,49 @@ nav ul li.active a {color: white !important;}
     margin-top: 20px;
     letter-spacing: 1px;
 }
+
+.about-me button {
+    margin-top: 10%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    background: linear-gradient(to right, #ff9068, #fd746c);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* End About-Me */
 
 /*Start Resume */
 .resume {
-   background: #ffb347;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: linear-gradient(135deg, rgb(214, 76, 108), rgb(237, 123, 60));
 }
 /*End Resume */
 
 /*Start Portfolio */
 .portfolio {
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(135deg, rgb(0, 168, 127), rgb(185, 217, 127));
 
 }
+
+.portfolio .row > div {
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.portfolio .row > div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 /*End Portfolio */
 
 /*Start Ham */

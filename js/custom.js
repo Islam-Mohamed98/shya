@@ -27,6 +27,9 @@ $(function () {
 		$($(this).data('sec')).siblings().slideUp(600, function () { // FadeOut All Sibling Sections
 			$($('nav li.active').data('sec')).slideDown(500, function () { // FadeIn Selected Section
 				$('nav li').show();
+				$(this).find('.anim').animate({
+					width: '100%'
+				}, 500);
 			}); 
 		});
 	});
