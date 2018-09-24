@@ -13,7 +13,7 @@ $(function () {
 	$('nav.navbar').css('margin-left', infoH); // Margin-Left of Content
 	// Calc Nav Outer Height And Add Width To Div Sections
 
-	$('.sections, .test').height($(window).height()) // Add Height To Sections
+	$('.sections').height($(window).height()) // Add Height To Sections
 
 	$( window ).resize(function() {
   		$('.info, .content, .sections').height($(window).height()); // Adust Div Size

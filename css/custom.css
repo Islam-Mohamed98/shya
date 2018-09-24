@@ -125,7 +125,21 @@ nav ul li.active a {color: white !important;}
 /*Start Resume */
 .resume {
     background-image: linear-gradient(135deg, rgb(214, 76, 108), rgb(237, 123, 60));
+    color: white;
 }
+
+.resume .progress {
+    margin: 10px auto;
+}
+
+.resume h5  {
+        margin-top: 0px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+}
+
 /*End Resume */
 
 /*Start Portfolio */
