@@ -134,11 +134,14 @@ nav ul li.active a {color: white !important;}
 
 .resume h5  {
         margin-top: 0px;
-        text-align: center;
         margin-top: 20px;
         font-weight: bold;
         letter-spacing: 2px;
-}
+        display: inline-block;
+        padding: 12px 51px;
+        background-color: #424242;
+        border: black;
+    }
 
 /*End Resume */
 
@@ -177,11 +180,33 @@ nav ul li.active a {color: white !important;}
 
 /*Start Contact */
 .contact {
-    background: #e53935;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.contact iframe {
+    width: 100%;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form input:focus,
+.contact form textarea:focus{
+    background: #f9f9f9;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
 /*End Contact */
 
 /* ===================[ End Section ]===================[ */
