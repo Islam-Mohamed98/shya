@@ -6,17 +6,17 @@
 body {overflow: hidden;}
 
 /* Start Info */
-.info {position: fixed;width:15%;}
+.info {position: fixed;width:15%;overflow:hidden;}
+
+.info hr {
+    width: 75%;
+}
 
 .info .img {
     padding: 20px;
 }
 
 .info img {margin-top: 21%;}
-
-.info .img .social-icons i {
-    padding: 0;
-}
 
 
 .info > i.fa-times {
@@ -26,6 +26,44 @@ body {overflow: hidden;}
     font-size: 20px;
     cursor: pointer;
 }
+
+.info p {
+    display: block;
+    text-align: center;
+    font-weight:bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.info p i {color: #fd746c;}
+
+.info ul {
+    margin-left: 5px;
+    line-height: 2.2;
+}
+
+.info ul li {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.info ul li.email {font-size: 14px;}
+
+.info ul i {color: #fd746c;}
+
+.info .social-icons i {font-size: 22px;margin-left: 10px;}
+
+.info .social-icons i.fa-facebook {color: #6767fb;}
+.info .social-icons i.fa-twitter-square {color: #2caae1;}
+.info .social-icons i.fa-youtube {color: #f95959;}
+
+.info .copyright {
+    font-size: 11px;
+    margin-top: 20%;
+}
+
 /* End Info*/
 
 /* Start Content */
@@ -54,7 +92,7 @@ nav ul li {
 
 nav ul li a {transition: all 0.5s;font-weight: bold;}
 
-nav ul li.active {transform: translate(0, 50px) scale(2, 2);border-bottom: 1px solid white;}
+nav ul li.active {transform: translate(0, 50px);border-bottom: 1px solid white;}
 
 nav ul li.active a {color: white !important;}
 /* End Navbar*/
@@ -71,8 +109,7 @@ nav ul li.active a {color: white !important;}
 
 /* Start About-Me */
 .about-me .anim {
-    width: 0;
-    overflow:hidden;
+
 }
 
 .about-me {
@@ -124,8 +161,10 @@ nav ul li.active a {color: white !important;}
 
 /*Start Resume */
 .resume {
-    background-image: linear-gradient(135deg, rgb(214, 76, 108), rgb(237, 123, 60));
     color: white;
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .resume .progress {
