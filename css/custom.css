@@ -59,11 +59,9 @@
 
 /* Start Content */
 
-.content {
 
-}
 
-.content i.fa-plus {
+.content > i.fa-plus {
     display: none;
     position: absolute;
     top: 10px;
@@ -98,7 +96,7 @@ nav ul li.active a {color: white !important;}
 .sections > div  {display: none;}
 .sections .about-me {display: block;}
 
-.sections .container {padding-top: 166px;width: 95%;padding-bottom: 50px;}
+.sections .container {padding-top: 100px;max-width: 95%;padding-bottom: 50px;}
 
 /* Start About-Me */
 
@@ -110,6 +108,10 @@ nav ul li.active a {color: white !important;}
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.about-me .inf {
+    margin-bottom: 20px;
+}
+
 .about-me .con-img {
     padding: 0;
 }
@@ -119,7 +121,12 @@ nav ul li.active a {color: white !important;}
     background: #4e4e4e;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: 40px;
+    left: -40px;
 }
+
+
 .about-me h3 {
     letter-spacing: 2px;
 }
@@ -206,7 +213,11 @@ nav ul li.active a {color: white !important;}
 /*End Resume */
 
 /*Start Portfolio */
-.portfolio {background-image: linear-gradient(135deg, rgb(0, 168, 127), rgb(185, 217, 127));}
+.portfolio {background: linear-gradient(to right, #ff9068, #fd746c);}
+
+.portfolio .container {
+    max-width: 100% !important;
+}
 
 .portfolio ul.shuffel {
     display: inline-block;
@@ -224,19 +235,13 @@ nav ul li.active a {color: white !important;}
     font-weight: 500;
 }
 
-.portfolio ul.shuffel li+li:before {
-    padding: 8px;
-    color: #000;
-    content: "/\00a0";
-    font-weight: bold;
-}
 
 .portfolio ul.shuffel li a {
     color: white;
     text-decoration: none;
     padding: 5px 16px;
     letter-spacing: 2px;
-    border-bottom: 2px solid transparent;
+    border-radius: 5px;
     transition: all 0.5s;
 }
 
@@ -244,18 +249,78 @@ nav ul li.active a {color: white !important;}
 .portfolio ul.shuffel li a.active {
     color: white;
     text-decoration: none;
-    border-bottom: 2px solid white;
+    background: #605757;
+}
+
+.portfolio .row  .mix {padding: 0 !important;position: relative;overflow: hidden}
+
+.portfolio .mix .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: #0009;
+    opacity: 0;
+    padding: 15px;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.portfolio .row  .mix:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio .mix img {
+    transition: all 2.5s;
+}
+
+.portfolio .mix:hover img {
+    transform: scale(1.5, 1.5);
+}
+
+.portfolio .mix .overlay p {
+font-size: 13px;
+color: #cbcbcb;
+letter-spacing: 2px;
+}
+
+.portfolio .mix .overlay > i {
+    position: absolute;
+    z-index: 333;
+    transition: all 0.5s;
+    color: #cbcbcb;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 2px dotted;
+    transition: all 3s;
+    
+}
+
+.portfolio .mix .overlay i:hover {
+    border-bottom: 2px dotted white;
+    border-left: 2px dotted white;
+}
+
+.portfolio .mix .overlay > span {
+
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+    color: #c2c2c2;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 
-.portfolio .row  .mix {
-    margin-top: 10px;
-}
 
-.portfolio .row  .mix .mix-content {
-    background-color: white;
-    height: 100px;
-}
 
 /*End Portfolio */
 

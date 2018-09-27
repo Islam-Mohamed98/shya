@@ -41,14 +41,14 @@ $(function () {
   			$('.content').animate({
   				marginLeft: 0
   			},500, function() {
-  				$('.content i.fa-plus').show();
+  				$('.content > i.toggle-info').show();
   			});
 		});
 	});
 
 	// Open Link
-	$('.content i.fa-plus').click(function () {
-		$('.content i.fa-plus').hide();
+	$('.content > i.toggle-info').click(function () {
+		$('.content > i.toggle-info').hide();
 		$('.content').animate({
   			marginLeft: infoH
   		},500, function () {
