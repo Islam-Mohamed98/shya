@@ -4,19 +4,19 @@ $(function () {
 
 	var infoH = $('.info').css('width'); // Width Of Info Div by Css
 	var infoHDy = $('info').outerWidth(true); // Width Of Info Div dynamic
-	var navH = $('nav').outerHeight(true); // Get Outer Height Of Navabr
 	
 	
-	$('.info, .content').height($(window).height()); // Adust Div Size 
+	$('.info').height($(window).height()); // Adust Div Size 
+	$('.sections > div').css('min-height', $(window).height() - $('nav.navbar').outerHeight(true)); // Height Of Content
 
 	$('.content').css('margin-left', infoH); // Margin-Left of Content
 	$('nav.navbar').css('margin-left', infoH); // Margin-Left of Content
+	
 	// Calc Nav Outer Height And Add Width To Div Sections
 
-	$('.sections').height($(window).height()) // Add Height To Sections
 
 	$( window ).resize(function() {
-  		$('.info, .content, .sections').height($(window).height()); // Adust Div Size
+  		$('.info').height($(window).height()); // Adust Div Size
   		infoHDy = $('info').outerWidth(true);
   		$('.content').css('margin-left', infoHDy);
 	});
@@ -27,6 +27,7 @@ $(function () {
 		$($(this).data('sec')).siblings().slideUp(600, function () { // FadeOut All Sibling Sections
 			$($('nav li.active').data('sec')).slideDown(500, function () { // FadeIn Selected Section
 				$('nav li').show();
+			
 			}); 
 		});
 	});
@@ -58,6 +59,5 @@ $(function () {
 			});
   		});
 	});
-
 
 });

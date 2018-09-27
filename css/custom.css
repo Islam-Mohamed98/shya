@@ -3,21 +3,15 @@
 	Author Name : Eva
 */
 
-body {overflow: hidden;}
 
 /* Start Info */
 .info {position: fixed;width:15%;overflow:hidden;}
 
-.info hr {
-    width: 75%;
-}
+.info hr {width: 75%;}
 
-.info .img {
-    padding: 20px;
-}
+.info .img {padding: 20px;}
 
 .info img {margin-top: 21%;}
-
 
 .info > i.fa-times {
     position: absolute;
@@ -38,10 +32,7 @@ body {overflow: hidden;}
 
 .info p i {color: #fd746c;}
 
-.info ul {
-    margin-left: 5px;
-    line-height: 2.2;
-}
+.info ul {margin-left: 5px;line-height: 2.2;}
 
 .info ul li {
     font-weight: bold;
@@ -67,6 +58,11 @@ body {overflow: hidden;}
 /* End Info*/
 
 /* Start Content */
+
+.content {
+
+}
+
 .content i.fa-plus {
     display: none;
     position: absolute;
@@ -78,8 +74,7 @@ body {overflow: hidden;}
 /* End Content */
 
 /* Start Navbar */
-nav.navbar {padding: 0;background:transparent;position:fixed;}
-
+nav.navbar {padding: 0;background:transparent;position: static;}
 
 nav ul {margin: 0 auto;}
 
@@ -98,21 +93,18 @@ nav ul li.active a {color: white !important;}
 /* End Navbar*/
 
 /* ===================[ Start Section ]===================[ */
-.sections {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+.sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
-.sections > div  {display: none; height: 100%;}
+.sections > div  {display: none;}
 .sections .about-me {display: block;}
 
-.sections .container {position: relative;top: 166px;}
+.sections .container {padding-top: 166px;width: 95%;padding-bottom: 50px;}
 
 /* Start About-Me */
 
 
 .about-me {
     color: white;
-    overflow: auto;
     background: #fd746c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -182,7 +174,7 @@ nav ul li.active a {color: white !important;}
 
 }
 
-.resume .row > div:first-child {
+.resume > .row > div:first-child {
     margin-bottom: 50px;
 }
 
@@ -199,32 +191,70 @@ nav ul li.active a {color: white !important;}
     background: #7e7979 !important; 
 }
 
-.resume h5  {
+.resume .history {
+    height: 100%;
+    width: 2px;
+    background-color: #7e7979;
+}
 
+.resume .history-content {
+    height: 224px;
+    width: 100%;
+    background-color: #7e7979;
 }
 
 /*End Resume */
 
 /*Start Portfolio */
-.portfolio {
-    background-image: linear-gradient(135deg, rgb(0, 168, 127), rgb(185, 217, 127));
+.portfolio {background-image: linear-gradient(135deg, rgb(0, 168, 127), rgb(185, 217, 127));}
 
-}
-
-.portfolio .row > div {
-    padding: 0;
-    display: block;
+.portfolio ul.shuffel {
+    display: inline-block;
+    margin: 0 auto;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+
 }
 
-.portfolio .row > div::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+.portfolio ul.shuffel li {
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.portfolio ul.shuffel li+li:before {
+    padding: 8px;
+    color: #000;
+    content: "/\00a0";
+    font-weight: bold;
+}
+
+.portfolio ul.shuffel li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 16px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.portfolio ul.shuffel li a:hover,
+.portfolio ul.shuffel li a.active {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+
+.portfolio .row  .mix {
+    margin-top: 10px;
+}
+
+.portfolio .row  .mix .mix-content {
+    background-color: white;
+    height: 100px;
 }
 
 /*End Portfolio */
@@ -234,7 +264,6 @@ nav ul li.active a {color: white !important;}
     background: #FFB75E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 /*End Ham */
 
