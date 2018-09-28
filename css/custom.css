@@ -363,6 +363,14 @@ nav ul li.active a {color: white !important;}
 
 .testimonials .carousel-item {height: 80%; overflow-y: hidden;}
 
+.testimonials .carousel ol li {
+    transition: all 1s;
+}
+
+.testimonials .carousel ol li.active {
+    width: 50%;
+}
+
 .testimonials .testi {
     position: relative;
     margin: 0 auto;
