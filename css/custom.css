@@ -91,7 +91,7 @@ nav ul li.active a {color: white !important;}
 .sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .sections > div  {display: none;}
-.sections .service {display: block;}
+.sections .resume {display: block;}
 
 .sections .container {padding-top: 100px;max-width: 95%;padding-bottom: 50px;}
 
@@ -161,13 +161,10 @@ nav ul li.active a {color: white !important;}
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.resume .inf p {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto 30px auto;
-    letter-spacing: 1px;
-    line-height: 1.7;
+.resume .work-skills {
+    margin-bottom: 50px;
 }
+
 
 .resume h5 {
     margin-bottom: 20px;
@@ -175,16 +172,8 @@ nav ul li.active a {color: white !important;}
     border-bottom: 1px solid white;
     padding: 7px;
     display: inline-block;
-
 }
 
-.resume > .row > div:first-child {
-    margin-bottom: 50px;
-}
-
-.resume .row > div.work-skills {
-    border-right: 1px solid white;
-}
 
 .resume .progress {
     margin-bottom: 15px;
@@ -195,16 +184,36 @@ nav ul li.active a {color: white !important;}
     background: #7e7979 !important; 
 }
 
-.resume .history {
-    height: 100%;
-    width: 2px;
-    background-color: #7e7979;
+.resume .exp .item {
+    background-color: white;
+    color: #464646;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
 }
 
-.resume .history-content {
-    height: 224px;
-    width: 100%;
-    background-color: #7e7979;
+.resume .exp .item > span {
+    display: block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.resume .exp .item > span i {
+    font-size: 11px;
+    position: absolute;
+    top: -11px;
+    left: -19px;
+    background: #7e7979;
+    color: white;
+    padding: 6px;
+}
+
+.resume .exp .item > p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #616161;
 }
 
 /*End Resume */
@@ -316,12 +325,11 @@ nav ul li.active a {color: white !important;}
     background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.service h6 {
+.service h5 {
     letter-spacing: 2px;
     border-bottom: 1px solid white;
     display: inline-block;
     padding-bottom: 7px;
-    margin-bottom: 50px;
 }
 
 .service .item {
@@ -329,7 +337,8 @@ nav ul li.active a {color: white !important;}
     color: #464646;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 10px;
+    margin-top: 60px;
+    position: relative;
 }
 
 .service .item > span {
@@ -343,8 +352,8 @@ nav ul li.active a {color: white !important;}
     font-size: 20px;
     position: absolute;
     top: -13px;
-    left: 2px;
-    background: black;
+    left: -13px;
+    background: #7e7979;
     color: white;
     padding: 10px;
     border-radius: 10%;
@@ -357,11 +366,11 @@ nav ul li.active a {color: white !important;}
 }
 
 /*Testimonials*/
-.service .testimonials {margin-top: 50px;}
+.service .testimonials {margin-top: 60px;}
 
 .service .testimonials .carousel-inner {height: 300px;}
 
-.testimonials .carousel-item {height: 80%; overflow-y: hidden;}
+.testimonials .carousel-item {height: 80%; overflow-y: hidden;margin-top: 50px;}
 
 .testimonials .carousel ol li {
     transition: all 1s;
