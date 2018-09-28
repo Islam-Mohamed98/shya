@@ -2,6 +2,27 @@ $(function () {
 
 	'use strict';
 
+				$('.owl-carousel').owlCarousel({
+			    loop:true,
+			    responsiveClass:true,
+			    autoplay:true,
+			    autoplayTimeout:5000,
+			    autoplayHoverPause:true,
+			    autoWidth: true,
+			    dots: false,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:2
+			        },
+			        1000:{
+			            items:3
+			        }
+			    }
+			})
+
 	var infoH = $('.info').css('width'); // Width Of Info Div by Css
 	var infoHDy = $('info').outerWidth(true); // Width Of Info Div dynamic
 	

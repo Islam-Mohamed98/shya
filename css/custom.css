@@ -65,6 +65,7 @@
     padding: 8px;
     background: #fe856a;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10%;
 }
 
 .info .social-icons i {font-size: 22px;margin-left: 10px;}
@@ -189,6 +190,9 @@ nav ul li.active a {color: white !important;}
     color: white;
 }
 
+.about-me .owl-carousel .item {
+    padding: 15px;
+}
 .about-me .up-coming .card {
     border: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
