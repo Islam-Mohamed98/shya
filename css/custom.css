@@ -91,7 +91,7 @@ nav ul li.active a {color: white !important;}
 .sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .sections > div  {display: none;}
-.sections .resume {display: block;}
+.sections .about-me {display: block;}
 
 .sections .container {padding-top: 100px;max-width: 95%;padding-bottom: 50px;}
 
@@ -112,7 +112,7 @@ nav ul li.active a {color: white !important;}
 .about-me .con-img {
     padding: 0;
 }
-.about-me img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.about-me .con-img img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .about-me .bg {
     background: #4e4e4e;
@@ -128,7 +128,7 @@ nav ul li.active a {color: white !important;}
     letter-spacing: 2px;
 }
 
-.about-me h5 {
+.about-me .bg > h5 {
     letter-spacing: 1px;
     padding: 10px 0;
 }
@@ -151,6 +151,33 @@ nav ul li.active a {color: white !important;}
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.about-me .up-coming {
+    margin-top: 80px;
+    color: black;
+}
+
+
+
+.about-me .up-coming > h5 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid white;
+    padding: 7px;
+    display: inline-block;
+    color: white;
+}
+
+.about-me .up-coming .card {
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 30px;
+}
+
+.about-me .card-subtitle {
+    font-size: 13px;
+}
+
 /* End About-Me */
 
 /*Start Resume */
@@ -208,6 +235,7 @@ nav ul li.active a {color: white !important;}
     background: #7e7979;
     color: white;
     padding: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .resume .exp .item > p {
@@ -221,7 +249,7 @@ nav ul li.active a {color: white !important;}
 /*Start Portfolio */
 .portfolio {background: linear-gradient(to right, #ff9068, #fd746c);}
 
-.portfolio .container {max-width: 100% !important;}
+
 
 .portfolio ul.shuffel {
     display: inline-block;
@@ -230,6 +258,8 @@ nav ul li.active a {color: white !important;}
     left: 50%;
     transform: translateX(-50%);
     top: -20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .portfolio ul.shuffel li {
@@ -255,7 +285,9 @@ nav ul li.active a {color: white !important;}
     background: #605757;
 }
 
-.portfolio .row  .mix {padding: 0 !important;position: relative;overflow: hidden}
+.portfolio .row {box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.portfolio .row  .mix {padding: 0 !important;position: relative;overflow: hidden;}
 
 .portfolio .mix .overlay {
     position: absolute;
@@ -280,7 +312,7 @@ nav ul li.active a {color: white !important;}
     font-size: 13px;
     color: #cbcbcb;
     letter-spacing: 2px;
-    }
+}
 
 .portfolio .mix .overlay > i {
     position: absolute;
@@ -357,6 +389,7 @@ nav ul li.active a {color: white !important;}
     color: white;
     padding: 10px;
     border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .service .item > p {
