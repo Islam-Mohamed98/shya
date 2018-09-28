@@ -58,9 +58,6 @@
 /* End Info*/
 
 /* Start Content */
-
-
-
 .content > i.fa-plus {
     display: none;
     position: absolute;
@@ -94,7 +91,7 @@ nav ul li.active a {color: white !important;}
 .sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .sections > div  {display: none;}
-.sections .about-me {display: block;}
+.sections .service {display: block;}
 
 .sections .container {padding-top: 100px;max-width: 95%;padding-bottom: 50px;}
 
@@ -215,9 +212,7 @@ nav ul li.active a {color: white !important;}
 /*Start Portfolio */
 .portfolio {background: linear-gradient(to right, #ff9068, #fd746c);}
 
-.portfolio .container {
-    max-width: 100% !important;
-}
+.portfolio .container {max-width: 100% !important;}
 
 .portfolio ul.shuffel {
     display: inline-block;
@@ -226,7 +221,6 @@ nav ul li.active a {color: white !important;}
     left: 50%;
     transform: translateX(-50%);
     top: -20px;
-
 }
 
 .portfolio ul.shuffel li {
@@ -235,10 +229,10 @@ nav ul li.active a {color: white !important;}
     font-weight: 500;
 }
 
-
 .portfolio ul.shuffel li a {
     color: white;
     text-decoration: none;
+    background: transparent;
     padding: 5px 16px;
     letter-spacing: 2px;
     border-radius: 5px;
@@ -267,23 +261,17 @@ nav ul li.active a {color: white !important;}
     transition: all 1s;
 }
 
-.portfolio .row  .mix:hover .overlay {
-    opacity: 1;
-}
+.portfolio .row  .mix:hover .overlay {opacity: 1;}
 
-.portfolio .mix img {
-    transition: all 2.5s;
-}
+.portfolio .mix img {transition: all 2.5s;}
 
-.portfolio .mix:hover img {
-    transform: scale(1.5, 1.5);
-}
+.portfolio .mix:hover img {transform: scale(1.5, 1.5);}
 
 .portfolio .mix .overlay p {
-font-size: 13px;
-color: #cbcbcb;
-letter-spacing: 2px;
-}
+    font-size: 13px;
+    color: #cbcbcb;
+    letter-spacing: 2px;
+    }
 
 .portfolio .mix .overlay > i {
     position: absolute;
@@ -318,19 +306,112 @@ letter-spacing: 2px;
     font-size: 12px;
     letter-spacing: 2px;
 }
-
-
-
-
 /*End Portfolio */
 
-/*Start Ham */
-.ham {
+/*Start Service */
+.service {
+    color: white;
     background: #FFB75E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/*End Ham */
+
+.service h6 {
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 50px;
+}
+
+.service .item {
+    background-color: white;
+    color: #464646;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+}
+
+.service .item > span {
+    display: block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.service .item > span i {
+    font-size: 20px;
+    position: absolute;
+    top: -13px;
+    left: 2px;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.service .item > p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #616161;
+}
+
+/*Testimonials*/
+.service .testimonials {margin-top: 50px;}
+
+.service .testimonials .carousel-inner {height: 300px;}
+
+.testimonials .carousel-item {height: 80%; overflow-y: hidden;}
+
+.testimonials .testi {
+    position: relative;
+    margin: 0 auto;
+    height: 80%;
+    background-color: white;
+    color: #464646;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+}
+
+.testimonials .testi h5 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.testimonials .testi span {
+    text-align: center;
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+.testimonials .testi p {
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin-left: 12%;
+}
+
+.testimonials .testi-img {
+    transition: all 0.5s;
+    max-width: 15%;
+    position: absolute;
+    top: 34px;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left: -50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/*End Service */
 
 /*Start Contact */
 .contact {
