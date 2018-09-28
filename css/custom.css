@@ -5,13 +5,18 @@
 
 
 /* Start Info */
-.info {position: fixed;width:15%;overflow:hidden; padding: 5px;padding-right: 13px;}
+.info {position: fixed;width:15%;overflow:hidden;}
 
 .info hr {width: 75%;}
 
 .info .img {padding: 20px;}
 
 .info img {margin-top: 21%;}
+
+.info .div-rel {
+    overflow: hidden;
+    padding: 8px;
+}
 
 .info .div-rel > i.fa-times {
     position: absolute;
@@ -42,6 +47,7 @@
     text-align: center;
     position: relative;
     padding: 12px 0;
+    margin-right: 4%;
 }
 
 .info ul li {
@@ -531,11 +537,7 @@ nav ul li.active a {color: white !important;}
     transform: translateY(-50%);
 }
 
-.contact .social-icons i {
-    cursor: pointer;
-}
-
-.contact .social-icons i {font-size: 22px;margin-left: 10px;}
+.contact .social-icons i {font-size: 27px;margin-left: 10px;cursor: pointer;}
 
 .contact .social-icons i.fa-facebook {color: #6767fb;}
 .contact .social-icons i.fa-twitter-square {color: #2caae1;}
