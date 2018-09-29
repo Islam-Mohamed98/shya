@@ -3,6 +3,40 @@
 	Author Name : Eva
 */
 
+/* Start Option Box */
+.option-box {
+    position: fixed;
+    right: 0;
+    top: 0;
+    top: 100px;
+    color: #4e4e4e;
+    z-index: 9999;
+}
+
+.option-box .color-option {
+    float: right;
+    background: white;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.option-box .color-option li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: black;
+}
+
+.option-box .icon {
+    display: inline-block;
+    background: white;
+}
+
+.option-box .icon i {
+    padding: 6px;
+}
+/* End Option Box*/
 
 /* Start Info */
 .info {position: fixed;width:15%;overflow:hidden;}
