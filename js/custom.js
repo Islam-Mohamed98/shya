@@ -30,16 +30,25 @@ $(function () {
 	$('.info').height($(window).height()); // Adust Div Size 
 	$('.sections > div').css('min-height', $(window).height() - $('nav.navbar').outerHeight(true)); // Height Of Content
 
-	$('.content').css('margin-left', infoH); // Margin-Left of Content
-	$('nav.navbar').css('margin-left', infoH); // Margin-Left of Content
-	
+	if ($(window).width() > 991.98) { // Check If Window Width Bigger Than Md Width
+		$('.content').css('margin-left', infoH); // Margin-Left of Content
+		$('nav.navbar').css('margin-left', infoH); // Margin-Left of Content
+	}
+
 	// Calc Nav Outer Height And Add Width To Div Sections
 
 
 	$( window ).resize(function() {
   		$('.info').height($(window).height()); // Adust Div Size
-  		infoHDy = $('info').outerWidth(true);
-  		$('.content').css('margin-left', infoHDy);
+  		if ($(window).width() > 991.98) { // Check If Window Width Bigger Than Md Width
+	  		infoHDy = $('.info').outerWidth(true);
+	  		$('.content').css('margin-left', infoHDy);
+  		} else {
+  			$('nav.navbar').css('margin-left', 0);
+  			$('.content').css('margin-left', 0);
+  		}
+
+  		console.log(infoHDy)
 	});
 
 	// Switching Between Sections
@@ -59,10 +68,14 @@ $(function () {
 		$('.info').animate({
 			width: 0
 		},500, function () {
-  			$('.content').animate({
+  			$('.content, .navbar').animate({ // Add Magrin 0 To NavBar And Content
   				marginLeft: 0
   			},500, function() {
-  				$('.content > i.toggle-info').show();
+  				if ($(window).width() > 991.98) {
+  					$('.content > i.toggle-info').show();
+  				} else {
+  					$('.content > i.toggle-info').hide();
+  				}
   			});
 		});
 	});

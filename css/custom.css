@@ -135,7 +135,6 @@ nav ul li.active a {color: white !important;}
     background: #4e4e4e;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
     top: 40px;
     left: -40px;
 }
@@ -491,8 +490,17 @@ nav ul li.active a {color: white !important;}
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.contact .row.first {
+    margin-bottom: 30px;
+}
+
 .contact iframe {
     width: 100%;
+}
+
+.contact form {
+
+    padding: 20px 0;
 }
 
 .contact form input,
@@ -519,7 +527,7 @@ nav ul li.active a {color: white !important;}
     position: relative;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 30px;
+    margin-top: 0;
     text-align: center;
     height: 80%;
 }
@@ -546,5 +554,61 @@ nav ul li.active a {color: white !important;}
 /*End Contact */
 
 /* ===================[ End Section ]===================[ */
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    /*About me*/
+    .about-me .bg {
+        top: 0;
+        left: 0;
+    }
+
+    /* Contact */
+    .contact form {
+        margin-top: 30px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /* Navbar */
+    nav.navbar {
+        background: #ffffff;
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgb(126, 121, 121);
+        margin: 0;
+        outline: none;
+        border: none;
+    }
+
+    nav ul li.active {
+        transform: translate(0, 50px);
+        border-bottom: 1px solid white;
+        border: 0;
+        color: white;
+        transform: translate(0,0);
+        background: #7f7f7f;
+    }
+
+    /*Content*/
+    .content {
+        margin-left: 0;
+    } 
+
+    .content > i.toggle-info {
+        display: none;
+    }
+
+
+}
 
 
