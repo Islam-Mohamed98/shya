@@ -7,6 +7,14 @@
 /* Start Info */
 .info {position: fixed;width:15%;overflow:hidden;}
 
+.info .div-rel > i.fa-times {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .info hr {width: 75%;}
 
 .info .img {padding: 20px;}
@@ -16,14 +24,6 @@
 .info .div-rel {
     overflow: hidden;
     padding: 8px;
-}
-
-.info .div-rel > i.fa-times {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 .info p {
@@ -36,18 +36,20 @@
 }
 
 
-.info p i {color: #fd746c;}
+.info .social-icons i {font-size: 22px;margin-left: 10px;}
+.info .social-icons i.fa-facebook {color: #6767fb;}
+.info .social-icons i.fa-twitter-square {color: #2caae1;}
+.info .social-icons i.fa-youtube {color: #f95959;}
 
 .info ul {
-    margin-left: 5px;
     line-height: 2.2;
     margin-top: 28px;
     background: #4e4e4e;
     color: white;
-    text-align: center;
+    text-align: left;
     position: relative;
-    padding: 12px 0;
-    margin-right: 4%;
+    padding: 20px 0 20px 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .info ul li {
@@ -57,22 +59,16 @@
 }
 
 
-.info ul i {
+.info ul > i {
     color: #fefefe;
     position: absolute;
-    top: -15px;
-    left: -7px;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 8px;
     background: #fe856a;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10%;
 }
-
-.info .social-icons i {font-size: 22px;margin-left: 10px;}
-
-.info .social-icons i.fa-facebook {color: #6767fb;}
-.info .social-icons i.fa-twitter-square {color: #2caae1;}
-.info .social-icons i.fa-youtube {color: #f95959;}
 
 
 /* End Info*/
