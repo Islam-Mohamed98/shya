@@ -1,6 +1,6 @@
 /*
-	Theme Name : Kewa
-	Author Name : Eva
+    Theme Name : Kewa
+    Author Name : Eva
 */
 
 /* Start Option Box */
@@ -455,7 +455,13 @@ nav ul li.active a {color: white !important;}
 /*Testimonials*/
 .service .testimonials {margin-top: 60px;}
 
-.testimonials .carousel-item {height: 300px;}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 340px;
+}
+
 
 .testimonials .carousel ol li {
     transition: all 1s;
@@ -465,10 +471,10 @@ nav ul li.active a {color: white !important;}
     width: 50%;
 }
 
-.testimonials .testi {
+.testimonials .testi{
     position: relative;
     margin: 0 auto;
-    height: 80%;
+    margin-top: 0px;
     background-color: white;
     color: #464646;
     padding: 15px;
@@ -476,16 +482,26 @@ nav ul li.active a {color: white !important;}
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 10px;
+    height: 290px;
+    overflow: auto;
+}
+
+.testimonials .testi-img {
+     max-width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    height: 100px;
 }
 
 .testimonials .testi h5 {
     text-align: center;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     letter-spacing: 2px;
     margin-bottom: 0;
     display: block;
-
 }
 
 .testimonials .testi span {
@@ -494,24 +510,13 @@ nav ul li.active a {color: white !important;}
     color: gray;
     font-size: 13px;
     margin-bottom: 20px;
-    margin-top: 3px;
+    margin-top: -5px;
 }
 
 .testimonials .testi p {
     line-height: 1.7;
     letter-spacing: 1px;
     margin-left: 12%;
-}
-
-.testimonials .testi-img {
-    transition: all 0.5s;
-    max-width: 15%;
-    position: absolute;
-    top: 34px;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    left: -50px;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 
@@ -644,5 +649,3 @@ nav ul li.active a {color: white !important;}
 
 
 }
-
-
