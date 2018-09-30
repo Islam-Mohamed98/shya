@@ -51,25 +51,18 @@
 
 .info hr {width: 75%;}
 
-.info .img {padding: 20px;}
+.info .img {padding: 20px;margin-top: 16%;}
 
-.info img {margin-top: 21%;}
-
-.info .div-rel {
-    overflow: hidden;
-    padding: 8px;
-}
+.info .div-rel {overflow: auto;}
 
 .info p {
-    display: block;
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    padding: 0 20px;
 }
 
-
+.info .social-icons a {color:black; text-decoration: none;}
 .info .social-icons i {font-size: 22px;margin-left: 10px;}
 .info .social-icons i.fa-facebook {color: #6767fb;}
 .info .social-icons i.fa-twitter-square {color: #2caae1;}
@@ -86,12 +79,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
-.info ul li {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-
+.info ul li {font-weight: bold;letter-spacing: 1px;font-size: 14px;}
 
 .info ul > i {
     color: #fefefe;
@@ -100,7 +88,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 8px;
-    background: #fe856a;
+    background: #fe856ae6;
     border-radius: 10%;
 }
 
