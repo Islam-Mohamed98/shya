@@ -203,6 +203,8 @@ nav ul li.active a {color: white !important;}
     border: 0;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-y: auto;
+    height: 425px;
 }
 
 .about-me .card-subtitle {font-size: 13px; color:#a8a8a8 !important;}
@@ -234,6 +236,7 @@ nav ul li.active a {color: white !important;}
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 50px;
     transition: transform 0.2s linear;
+    height: 75%;
 }
 
 .resume .exp .item:hover {transform: translateY(-10px);}
@@ -378,6 +381,7 @@ nav ul li.active a {color: white !important;}
     margin-top: 60px;
     position: relative;
     transition: transform 0.2s linear;
+    height: 70%;
 }
 
 .service .item:hover {transform: translateY(-10px);}
