@@ -14,7 +14,8 @@
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
+    <!-- animate Css -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/custom.css" />
 
@@ -115,13 +116,13 @@
           <div class="sections">
 
             <!-- Start About Me-->
-            <div class="about-me">
+            <div class="about-me wow zoomIn" data-wow-delay="0s" data-wow-duration="0.5s">
               <div class="container">
 
                 <!-- Start Information -->
-                <div class="row">
+                <div class="row wow flipInX" data-wow-delay="0.5s" data-wow-duration="1s">
                   <div class="col-md-5 about-img">
-                    <img class="img-fluid" src="images/avatar01.jpeg" width="467" height="311" />
+                    <img class="img-fluid" src="images/avatar01.jpeg"/>
                   </div>
                   <div class="col-md-7 about-content">
                     <h3>Hello! My Name Is Morrow Kennedy</h3>
@@ -137,8 +138,8 @@
                 <!-- End Information -->
 
                 <!-- Start Coming Works -->
-                <div class="coming-work">
-                 <h5><i class="fab fa-ravelry"></i> Coming Work</h5>
+                <div class="coming-work" >
+                 <h5><i class="fab fa-ravelry"></i> Latest Blogs</h5>
 
                  <div class="owl-carousel owl-theme">
 
@@ -203,7 +204,7 @@
             <!-- End About Me -->
 
             <!-- Start Resume -->
-             <div class="resume">
+             <div class="resume wow zoomIn" data-wow-delay="0s" data-wow-duration="0.5s">
                <div class="container">
                  <div class="row">
                    <!-- Start Work Skills -->
@@ -278,7 +279,7 @@
             <!-- End Resume -->
 
             <!-- Start Portfolio -->
-            <div class="portfolio">
+            <div class="portfolio wow zoomIn" data-wow-delay="0s" data-wow-duration="0.5s">
               
               <div class="container"> 
                 <ul class="list-unstyled shuffel">
@@ -362,7 +363,7 @@
             <!-- End Portfolio -->
 
             <!-- Start Service -->
-            <div class="service">
+            <div class="service wow zoomIn" data-wow-delay="0s" data-wow-duration="0.5s">
               <div class="container">
 
                 <!-- Start My Service -->
@@ -465,7 +466,7 @@
             <!-- End Service -->
 
             <!-- Start Contact -->
-            <div class="contact">
+            <div class="contact wow zoomIn" data-wow-delay="0s" data-wow-duration="0.5s">
               <div class="container">
 
                 <!-- Start First Row -->
@@ -577,6 +578,12 @@
 
     <!-- Owl Carousel Js -->
     <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Wow Js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Custom Js -->
     <script src="js/custom.js"></script>

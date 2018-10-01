@@ -44,7 +44,7 @@
 /* End Option Box*/
 
 /* Start Info */
-.info {position: fixed;width:15%;overflow:hidden;}
+.info {position: fixed; width:15%; overflow:hidden; height: 100%;}
 
 .info .div-rel > i.fa-times {
     position: absolute;
@@ -130,24 +130,22 @@ nav ul li.active a {color: white !important;}
 /* End Navbar*/
 
 /* ===================[ Start Section ]===================[ */
-.sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-.sections > div  {display: none; padding: 0 20px;color: white;}
-.sections .about-me {display: block;}
-.sections .container {padding-top: 100px;padding-bottom: 50px;}
-
-/* Start About-Me */
-.about-me {
+.sections {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
     background: #fd746c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.sections > div  {display: none; padding: 0 20px;color: white;}
+.sections .about-me {display: block;}
+.sections .container {padding-top: 100px;padding-bottom: 50px;}
 
-.about-me .about-img {
-    padding: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-}
+/* Start About-Me */
+.about-me .about-img {padding: 0;}
+
+.about-me .about-img img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .about-me .about-content {
     position: relative;
@@ -214,12 +212,6 @@ nav ul li.active a {color: white !important;}
 /* End About-Me */
 
 /*Start Resume */
-.resume {
-    background: #fd746c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .resume h5 {
     margin-bottom: 20px;
     letter-spacing: 3px;
@@ -239,7 +231,10 @@ nav ul li.active a {color: white !important;}
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 50px;
+    transition: transform 0.2s linear;
 }
+
+.resume .exp .item:hover {transform: translateY(-10px);}
 
 .resume .exp .item > span {
     display: block;
@@ -268,8 +263,6 @@ nav ul li.active a {color: white !important;}
 /*End Resume */
 
 /*Start Portfolio */
-.portfolio {background: linear-gradient(to right, #ff9068, #fd746c);}
-
 .portfolio ul.shuffel {
     display: inline-block;
     margin: 0 auto;
@@ -366,11 +359,6 @@ nav ul li.active a {color: white !important;}
 /*End Portfolio */
 
 /*Start Service */
-.service {
-    background: #FFB75E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 .service .container >  h5,
 .service .testimonials > h5 {
@@ -387,7 +375,10 @@ nav ul li.active a {color: white !important;}
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 60px;
     position: relative;
+    transition: transform 0.2s linear;
 }
+
+.service .item:hover {transform: translateY(-10px);}
 
 .service .item > span {
     display: block;
@@ -546,6 +537,7 @@ nav ul li.active a {color: white !important;}
     .about-me .coming-work .card {
         width: 200px !important;
     }
+
 }
 
 /* Small devices (landscape phones, less than 768px)*/
@@ -561,6 +553,11 @@ nav ul li.active a {color: white !important;}
         margin-top: 30px;
         border-bottom: 2px solid white;
         border-top: 2px solid white;
+    }
+
+    .portfolio ul.shuffel li a {
+        display: block;
+        margin-top:5px;
     }
 }
 
