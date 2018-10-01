@@ -26,10 +26,11 @@ $(function () {
 	// Switching Between Sections
 	$('nav li').click(function () {
 		$(this).addClass('active').siblings().hide().removeClass('active'); // Add Class Active To Li
-		$($(this).data('sec')).siblings().hide();// FadeOut All Sibling Sections
-			$($('nav li.active').data('sec')).show(0, function () { // FadeIn Selected Section
-				$('nav li').show();	
-			}); 
+		$($(this).data('sec')).siblings().hide(); // FadeOut All Sibling Sections
+		if($(this).data('sec') === '.portfolio') { $('.formixitup').mixItUp();} // For MixItUp
+		$($('nav li.active').data('sec')).show(0, function () { // FadeIn Selected Section
+			$('nav li').show();
+		}); 
 	});
 
 	// Close Link
@@ -64,6 +65,9 @@ $(function () {
 
 	// Trigger Nice Scroll Plugin
 	$('html, body').niceScroll();
+
+	//
+	
 	
 
 });

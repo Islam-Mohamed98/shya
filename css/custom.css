@@ -293,6 +293,7 @@ nav ul li.active a {color: white !important;}
     letter-spacing: 2px;
     border-radius: 5px;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .portfolio ul.shuffel li a:hover,
@@ -302,9 +303,14 @@ nav ul li.active a {color: white !important;}
     background: #4e4e4e;
 }
 
-.portfolio .row {box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
-.portfolio .row  .mix {padding: 0 !important;position: relative;overflow: hidden;}
+.portfolio .row  .mix {
+    padding: 0 !important;
+    position: relative;
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .portfolio .mix .overlay {
     position: absolute;
