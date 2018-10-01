@@ -41,11 +41,10 @@ $(function () {
 	// Switching Between Sections
 	$('nav li').click(function () {
 		$(this).addClass('active').siblings().hide().removeClass('active'); // Add Class Active To Li
-		$($(this).data('sec')).siblings().hide(0, function () { // FadeOut All Sibling Sections
+		$($(this).data('sec')).siblings().hide();// FadeOut All Sibling Sections
 			$($('nav li.active').data('sec')).show(0, function () { // FadeIn Selected Section
 				$('nav li').show();	
 			}); 
-		});
 	});
 
 	// Close Link
@@ -53,17 +52,16 @@ $(function () {
 		$(this).hide();
 		$('.info').animate({
 			left: -infoHDy
-		},500, function () {
+		},200);
   			$('.content').animate({ // Add Magrin 0 To NavBar And Content
   				marginLeft: 0
-  			},500, function() {
+  			},200, function() {
   				if ($(window).width() > 991.98) {
   					$('.content > i.toggle-info').show();
   				} else {
   					$('.content > i.toggle-info').hide();
   				}
   			});
-		});
 	});
 
 	// Open Link
@@ -71,13 +69,12 @@ $(function () {
 		$('.content > i.toggle-info').hide();
 		$('.content').animate({
   			marginLeft: infoHDy
-  		},500, function () {
+  		},200);
   			$('.info').animate({
 				left: 0
-			},500, function () {
+			},200, function () {
 				$('.info i').show();
 			});
-  		});
 	});
 
 });

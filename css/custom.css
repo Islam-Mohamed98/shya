@@ -44,7 +44,7 @@
 /* End Option Box*/
 
 /* Start Info */
-.info {position: fixed; width:15%; overflow:hidden; height: 100%;}
+.info {position: fixed; width:15%; overflow:hidden; height: 100%; transition: left 0.1s linear;}
 
 .info .div-rel > i.fa-times {
     position: absolute;
@@ -99,6 +99,8 @@
 /* End Info*/
 
 /* Start Content */
+.content {transition: margin-left 0.1s linear;}
+
 .content > i.toggle-info {
     display: none;
     position: absolute;
@@ -535,7 +537,7 @@ nav ul li.active a {color: white !important;}
 /*Custom*/
 @media (max-width: 380px) {
     .about-me .coming-work .card {
-        width: 200px !important;
+        width: 280px !important;
     }
 
 }
