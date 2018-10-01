@@ -44,7 +44,7 @@
 /* End Option Box*/
 
 /* Start Info */
-.info {position: fixed; width:15%; overflow:hidden; height: 100%; transition: left 0.1s linear;}
+.info {position: fixed; overflow:hidden; width:190px; transition: left 0.1s linear;}
 
 .info .div-rel > i.fa-times {
     position: absolute;
@@ -67,11 +67,11 @@
     margin-bottom: 20px;
 }
 
-.info .social-icons a {color:black; text-decoration: none;}
-.info .social-icons i {font-size: 22px;margin-left: 10px;}
-.info .social-icons i.fa-facebook {color: #6767fb;}
-.info .social-icons i.fa-twitter-square {color: #2caae1;}
-.info .social-icons i.fa-youtube {color: #f95959;}
+.social-icons a {color:black; text-decoration: none;}
+.social-icons i {font-size: 22px;margin-left: 10px;}
+.social-icons i.fa-facebook {color: #6767fb;}
+.social-icons i.fa-twitter-square {color: #2caae1;}
+.social-icons i.fa-youtube {color: #f95959;}
 
 .info ul {
     line-height: 2.2;
@@ -530,10 +530,6 @@ nav ul li.active a {color: white !important;}
 
 .contact .social-icons i {font-size: 27px;margin-left: 10px;cursor: pointer;}
 
-.contact .social-icons i.fa-facebook {color: #6767fb;}
-.contact .social-icons i.fa-twitter-square {color: #2caae1;}
-.contact .social-icons i.fa-youtube {color: #f95959;}
-
 /*End Contact */
 
 /* ===================[ End Section ]===================[ */
@@ -597,7 +593,7 @@ nav ul li.active a {color: white !important;}
 
     /*Content*/
     .content {
-        margin-left: 0;
+        margin-left: 0 !important;
     } 
 
     .content > i.toggle-info {

@@ -3,39 +3,24 @@ $(function () {
 	'use strict';
 
 	// Option Box
-	$('.option-box .icon i').on('click',function () {
-		$('.option-box').toggleClass('active');
-	});
+	$('.option-box .icon i').on('click',function () {$('.option-box').toggleClass('active');});
 
-		$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    responsiveClass:true,
-	    autoplay:true,
-	    autoplayTimeout:5000,
-	    autoplayHoverPause:true,
-	    autoWidth: true,
-	    dots: false,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    }
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    autoWidth: true,
+    dots: false,
 	})
 
-	var infoHDy = $('.info').outerWidth(true); // Width Of Info Div dynamic
-	
-	$('.content').css('margin-left', infoHDy); // Margin-Left of Content
-
+	var infoHDy = $('.info').outerWidth(true);
+	$('.content').css({'margin-left': infoHDy}); // Margin-Left of Content
+	$('.sections').css({'min-height' : $(window).height() - $('.navbar').outerHeight(true)}); // Height of Sections
 
 	$( window ).resize(function() {
-	  	infoHDy = $('.info').outerWidth(true);
-	  	$('.content').css('margin-left', infoHDy);
+	  	$('.sections').css({'min-height' : $(window).height() - $('.navbar').outerHeight(true)}); // Height of Sections
 	});
 
 	// Switching Between Sections
@@ -76,5 +61,9 @@ $(function () {
 				$('.info i').show();
 			});
 	});
+
+	// Trigger Nice Scroll Plugin
+	$('html, body').niceScroll();
+	
 
 });
