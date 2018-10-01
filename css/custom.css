@@ -297,12 +297,7 @@ nav ul li.active a {color: white !important;}
 }
 
 .portfolio ul.shuffel li a:hover,
-.portfolio ul.shuffel li a.active {
-    color: white;
-    text-decoration: none;
-    background: #4e4e4e;
-}
-
+.portfolio ul.shuffel li a.active {color: white;text-decoration: none;background: #4e4e4e;}
 
 .portfolio .row  .mix {
     padding: 0 !important;
@@ -335,6 +330,12 @@ nav ul li.active a {color: white !important;}
     font-size: 13px;
     color: #cbcbcb;
     letter-spacing: 2px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
 }
 
 .portfolio .mix .overlay > i {
@@ -354,18 +355,15 @@ nav ul li.active a {color: white !important;}
     transition: border 3s;
 }
 
-.portfolio .mix .overlay i:hover {
-    border-bottom: 2px dotted white;
-    border-left: 2px dotted white;
-}
+.portfolio .mix .overlay i:hover {border-bottom: 2px dotted white;border-left: 2px dotted white;}
 
 .portfolio .mix .overlay > span {
     position: absolute;
     bottom: 3px;
     left: 5px;
     color: #c2c2c2;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 11px;
+    letter-spacing: 3px;
 }
 /*End Portfolio */
 
@@ -542,31 +540,18 @@ nav ul li.active a {color: white !important;}
 
 /*Custom*/
 @media (max-width: 380px) {
-    .about-me .coming-work .card {
-        width: 280px !important;
-    }
-
+    .about-me .coming-work .card {width: 280px !important;}
 }
 
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
     /*About me*/
-    .about-me .about-content {
-        top: 0;
-        left: 0;
-    }
+    .about-me .about-content {top: 0;left: 0;}
 
     /* Contact */
-    .contact form {
-        margin-top: 30px;
-        border-bottom: 2px solid white;
-        border-top: 2px solid white;
-    }
+    .contact form {margin-top: 30px;border-bottom: 2px solid white;border-top: 2px solid white;}
 
-    .portfolio ul.shuffel li a {
-        display: block;
-        margin-top:5px;
-    }
+    .portfolio ul.shuffel li a {display: block;margin-top:5px;}
 }
 
 
@@ -598,13 +583,8 @@ nav ul li.active a {color: white !important;}
     }
 
     /*Content*/
-    .content {
-        margin-left: 0 !important;
-    } 
+    .content {margin-left: 0 !important;} 
 
-    .content > i.toggle-info {
-        display: none;
-    }
-
+    .content > i.toggle-info {display: none;}
 
 }
