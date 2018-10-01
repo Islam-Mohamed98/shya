@@ -6,19 +6,18 @@
 /* Start Option Box */
 .option-box {
     position: fixed;
-    right: 0;
+    right: -200px;
     top: 0;
     top: 100px;
-    color: #4e4e4e;
-    z-index: 9999;
-}
-
-.option-box .color-option {
-    float: right;
-    background: white;
     width: 200px;
-    padding-left: 20px;
-    padding-top: 30px;
+    color: #4e4e4e;
+    background: white;
+    padding: 15px;
+    z-index: 9999;
+    transition: right 0.5s;
+}
+.option-box.active {
+    right: 0;
 }
 
 .option-box .color-option li {
@@ -29,13 +28,19 @@
 }
 
 .option-box .icon {
+    border-radius: 10px 0 0 10px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: -45px;
+    top: 0;
     display: inline-block;
+    text-align: center;
     background: white;
 }
 
-.option-box .icon i {
-    padding: 6px;
-}
+.option-box .icon i {line-height: 45px; cursor: pointer}
+
 /* End Option Box*/
 
 /* Start Info */

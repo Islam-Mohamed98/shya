@@ -2,6 +2,11 @@ $(function () {
 
 	'use strict';
 
+	// Option Box
+	$('.option-box .icon i').on('click',function () {
+		$('.option-box').toggleClass('active');
+	});
+
 				$('.owl-carousel').owlCarousel({
 			    loop:true,
 			    responsiveClass:true,
