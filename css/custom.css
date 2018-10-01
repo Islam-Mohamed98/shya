@@ -204,10 +204,10 @@ nav ul li.active a {color: white !important;}
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow-y: auto;
-    height: 425px;
+    height: 370px;
 }
 
-.about-me .card-subtitle {font-size: 13px; color:#a8a8a8 !important;}
+.about-me .card-subtitle {font-size: 12px;color: #a8a8a8 !important;letter-spacing: 2px;}
 
 .about-me .card p.card-text {
     color: gray
