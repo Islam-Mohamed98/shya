@@ -66,8 +66,15 @@ $(function () {
 	// Trigger Nice Scroll Plugin
 	$('html, body').niceScroll();
 
-	//
-	
+	// Theme Color
+	$('.color-option li')
+	.eq(0).css('background', 'linear-gradient(to right, #ff9068, #fd746c)').end()
+	.eq(1).css('background', 'linear-gradient(to left, #b24592, #f15f79)').end()
+	.eq(2).css('background', 'linear-gradient(to bottom, #ffb75e, #ed8f03)');
+
+	$('.color-option li').click( function () {
+		$(this).addClass('active').siblings().removeClass('active');
+	});
 	
 
 });
