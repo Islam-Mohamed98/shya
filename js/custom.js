@@ -28,8 +28,16 @@ $(function () {
 	$('nav li').click(function () {
 		$(this).addClass('active').siblings().hide().removeClass('active'); // Add Class Active To Li
 		$($(this).data('sec')).siblings().hide(); // FadeOut All Sibling Sections
-		if($(this).data('sec') === '.portfolio') { $('.formixitup').mixItUp();} // For MixItUp
-		$($('nav li.active').data('sec')).show();
+		$($('nav li.active').data('sec')).show( 0, function () {
+			// Mix it Up
+			if($(this).hasClass('portfolio')) {
+			 	$('.formixitup').mixItUp({
+				animation: {
+        			duration: 200
+    			}
+			});
+			} // For MixItUp
+		});
 		$('nav li').show(); 
 	});
 
@@ -37,31 +45,21 @@ $(function () {
 	// Close Link
 	$('.info i.fa-times').click(function () {
 		$(this).hide();
-		$('.info').animate({
-			left: -infoHDy
-		},200);
-  			$('.content').animate({ // Add Magrin 0 To NavBar And Content
-  				marginLeft: 0
-  			},200, function() {
-  				if ($(window).width() > 991.98) {
-  					$('.content > i.toggle-info').show();
-  				} else {
-  					$('.content > i.toggle-info').hide();
-  				}
-  			});
+		$('.info').css({'left': -infoHDy});
+  		$('.content').css({'marginLeft': 0});
+  			if ($(window).width() > 991.98) {
+  				$('.content > i.toggle-info').show();
+  			} else {
+  				$('.content > i.toggle-info').hide();
+  			}
 	});
 
 	// Open Link
 	$('.content > i.toggle-info').click(function () {
 		$('.content > i.toggle-info').hide();
-		$('.content').animate({
-  			marginLeft: infoHDy
-  		},200);
-  			$('.info').animate({
-				left: 0
-			},200, function () {
-				$('.info i').show();
-			});
+		$('.content').css({'marginLeft': infoHDy});
+  		$('.info').css({'left': 0});
+		$('.info i').show();
 	});
 
 
