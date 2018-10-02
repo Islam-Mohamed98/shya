@@ -17,10 +17,10 @@ $(function () {
 
 	var infoHDy = $('.info').outerWidth(true);
 	$('.content').css({'margin-left': infoHDy}); // Margin-Left of Content
-	$('.sections').css({'min-height' : $(window).height() - $('.navbar').outerHeight(true)}); // Height of Sections
+	$('.sections').css({'min-height' : $(window).height()}); // Height of Sections
 
-	$( window ).resize(function() {
-	  	$('.sections').css({'min-height' : $(window).height() - $('.navbar').outerHeight(true)}); // Height of Sections
+	$(window ).resize(function() {
+	  	$('.sections').css({'min-height' : $(window).height()}); // Height of Sections
 	});
 
 	// Switching Between Sections
@@ -64,7 +64,7 @@ $(function () {
 	});
 
 	// Trigger Nice Scroll Plugin
-	$('html, body').niceScroll();
+	//$('html').niceScroll();
 
 	// Theme Color
 	$('.color-option li')
