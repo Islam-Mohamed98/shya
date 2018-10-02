@@ -3,6 +3,10 @@
     Author Name : Eva
 */
 
+body {
+    overflow: hidden;
+}
+
 /*Start Custom Class*/
 .shadow-custom {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
@@ -16,6 +20,7 @@
 [data-theme-color = "purple"] .background {background: linear-gradient(to left, #b24592, #f15f79);}
 [data-theme-color = "yellow"] .background {background: linear-gradient(to bottom, #ffb75e, #ed8f03);}
 /*End Custom Class*/
+
 
 /* Start Option Box */
 .option-box {
@@ -220,6 +225,8 @@ nav ul li.active a {color: white !important;}
 
 .resume .progress > div {background: #4e4e4e !important; }
 
+.resume .exp h5 {margin-top: 20px;}
+
 .resume .exp .item {
     background-color: white;
     color: #464646;
@@ -391,8 +398,11 @@ nav ul li.active a {color: white !important;}
     left: -13px;
     background: #4e4e4ecc;
     color: white;
-    padding: 10px;
     border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .service .item > p {
@@ -422,7 +432,7 @@ nav ul li.active a {color: white !important;}
     position: relative;
     margin: 0 auto;
     margin-top: 0px;
-    background-color: white;
+    background: white;
     color: #464646;
     padding: 15px;
     border-radius: 10px;
@@ -467,7 +477,7 @@ nav ul li.active a {color: white !important;}
 .contact iframe {width: 100%;display: block}
 
 .contact .row.second {
-    background-color: white;
+    background: white;
     margin: 0;
     padding: 15px;
 }
@@ -557,7 +567,81 @@ nav ul li.active a {color: white !important;}
 
     /*Content*/
     .content {margin-left: 0 !important;} 
-
     .content > i.toggle-info {display: none !important;}
 
 }
+
+/* Start Loading Screen */
+.loading-screen {
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #FFF;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+/* End Loading Screen */

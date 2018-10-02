@@ -5,17 +5,18 @@ $(function () {
 	// Option Box
 	$('.option-box .icon i').on('click',function () {$('.option-box').toggleClass('active');});
 
+	// Cwl-Carousel
 	$('.owl-carousel').owlCarousel({
-    loop:true,
-    responsiveClass:true,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    autoWidth: true,
-    dots: false,
+	    loop:true,
+	    responsiveClass:true,
+	    autoplay:true,
+	    autoplayTimeout:5000,
+	    autoplayHoverPause:true,
+	    autoWidth: true,
+	    dots: false,
 	})
 
-	var infoHDy = $('.info').outerWidth(true);
+	var infoHDy = $('.info').outerWidth(true); // Get Width OF Class Info
 	$('.content').css({'margin-left': infoHDy}); // Margin-Left of Content
 	$('.sections').css({'min-height' : $(window).height()}); // Height of Sections
 
@@ -28,10 +29,10 @@ $(function () {
 		$(this).addClass('active').siblings().hide().removeClass('active'); // Add Class Active To Li
 		$($(this).data('sec')).siblings().hide(); // FadeOut All Sibling Sections
 		if($(this).data('sec') === '.portfolio') { $('.formixitup').mixItUp();} // For MixItUp
-		$($('nav li.active').data('sec')).show(0, function () { // FadeIn Selected Section
-			$('nav li').show();
-		}); 
+		$($('nav li.active').data('sec')).show();
+		$('nav li').show(); 
 	});
+
 
 	// Close Link
 	$('.info i.fa-times').click(function () {
@@ -63,8 +64,6 @@ $(function () {
 			});
 	});
 
-	// Trigger Nice Scroll Plugin
-	//$('html').niceScroll();
 
 	// Theme Color
 	$('.color-option li')
@@ -80,4 +79,19 @@ $(function () {
 	$('.color-option li').eq(0).click()
 	
 
+	// Loading Screen
+	$(window).on('load',function () {
+
+		$('body').css('overflow', 'auto');
+
+		$('.loading-screen .sk-cube-grid').fadeOut(1000, function () {
+			$(this).parent().fadeOut(1000, function () {
+				$(this).remove();
+			});
+		});
+	});
+
+
 });
+
+
