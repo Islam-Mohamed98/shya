@@ -1,16 +1,26 @@
 /*
-    Theme Name : Kewa
+    Theme Name : Shya
     Author Name : Eva
 */
 
-body {
-}
+/*Start Custom Class*/
+.shadow-custom {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.social-icons a {color:black; text-decoration: none;}
+.social-icons i {font-size: 22px;margin-left: 10px;}
+.social-icons i.fa-facebook {color: #6767fb;}
+.social-icons i.fa-twitter-square {color: #2caae1;}
+.social-icons i.fa-youtube {color: #f95959;}
+
+[data-theme-color = "orange"] .background {background: linear-gradient(to right, #ff9068, #fd746c);}
+[data-theme-color = "purple"] .background {background: linear-gradient(to left, #b24592, #f15f79);}
+[data-theme-color = "yellow"] .background {background: linear-gradient(to bottom, #ffb75e, #ed8f03);}
+/*End Custom Class*/
 
 /* Start Option Box */
 .option-box {
     position: fixed;
     right: -200px;
-    top: 0;
     top: 100px;
     width: 200px;
     color: #4e4e4e;
@@ -19,16 +29,14 @@ body {
     z-index: 9999;
     transition: right 0.5s;
 }
-.option-box.active {
-    right: 0;
-}
+
+.option-box.active {right: 0;}
 
 .option-box .color-option li {
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: black;
-    transition: all 0.5s;
+    transition: border 0.5s;
     cursor: pointer;
     border: 2px solid transparent;
 }
@@ -44,15 +52,16 @@ body {
     top: 0;
     display: inline-block;
     text-align: center;
-    background: white;
+    color: white;
 }
 
 .option-box .icon i {line-height: 45px; cursor: pointer}
-
 /* End Option Box*/
 
 /* Start Info */
-.info {position: fixed; overflow:hidden; width:190px; transition: left 0.1s linear;}
+.info {position: fixed;  width:190px; transition: left 0.1s linear; height: 100%;}
+
+.info .div-rel {overflow: auto;height: 100%;}
 
 .info .div-rel > i.fa-times {
     position: absolute;
@@ -66,20 +75,12 @@ body {
 
 .info .img {padding: 20px;margin-top: 16%;}
 
-.info .div-rel {overflow: auto;}
-
 .info p {
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-
-.social-icons a {color:black; text-decoration: none;}
-.social-icons i {font-size: 22px;margin-left: 10px;}
-.social-icons i.fa-facebook {color: #6767fb;}
-.social-icons i.fa-twitter-square {color: #2caae1;}
-.social-icons i.fa-youtube {color: #f95959;}
 
 .info ul {
     line-height: 2.2;
@@ -89,7 +90,6 @@ body {
     text-align: left;
     position: relative;
     padding: 20px 0 20px 13px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .info ul li {font-weight: bold;letter-spacing: 1px;font-size: 14px;}
@@ -121,7 +121,7 @@ body {
 /* End Content */
 
 /* Start Navbar */
-nav.navbar {padding: 0;background:transparent;}
+nav.navbar {padding: 0;background:white;}
 
 nav ul {margin: 0 auto;}
 
@@ -140,13 +140,7 @@ nav ul li.active a {color: white !important;}
 /* End Navbar*/
 
 /* ===================[ Start Section ]===================[ */
-.sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);color: white;}
-
-[data-theme-color = "orange"] .background {background: linear-gradient(to right, #ff9068, #fd746c);}
-[data-theme-color = "purple"] .background {background: linear-gradient(to left, #b24592, #f15f79);}
-[data-theme-color = "yellow"] .background {background: linear-gradient(to bottom, #ffb75e, #ed8f03);}
-
-
+.sections {color: white;}
 .sections > div  {display: none; padding: 0 20px;color: white;}
 .sections .about-me {display: block;}
 .sections .container {padding-top: 100px;padding-bottom: 50px;}
@@ -154,31 +148,19 @@ nav ul li.active a {color: white !important;}
 /* Start About-Me */
 .about-me .about-img {padding: 0;}
 
-.about-me .about-img img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-
 .about-me .about-content {
     position: relative;
     background: #4e4e4e;
     padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: 40px;
     left: -40px;
 }
 
-.about-me .about-content > h3 {
-    letter-spacing: 2px;
-}
+.about-me .about-content > h3 {letter-spacing: 2px;}
 
-.about-me .about-content > h5 {
-    letter-spacing: 1px;
-    padding: 10px 0;
-}
+.about-me .about-content > h5 {letter-spacing: 1px;padding: 10px 0;}
 
-.about-me .about-content > p {
-    line-height: 1.7;
-    margin-top: 20px;
-    letter-spacing: 1px;
-}
+.about-me .about-content > p {line-height: 1.7;margin-top: 20px;letter-spacing: 1px;}
 
 .about-me .about-content > button {
     margin-top: 10%;
@@ -189,13 +171,12 @@ nav ul li.active a {color: white !important;}
     outline: none;
     padding: 7px 10px;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-.about-me .coming-work {margin-top: 80px;}
+.about-me .blogs {margin-top: 80px;}
 
-.about-me .coming-work > h5 {
+.about-me .blogs > h5 {
     color: white;
     margin-bottom: 20px;
     letter-spacing: 3px;
@@ -204,11 +185,10 @@ nav ul li.active a {color: white !important;}
     display: inline-block;
 }
 
-.about-me .coming-work .card {
+.about-me .blogs .card {
     color: black;
     border: 0;
     margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow-y: auto;
     height: 370px;
 }
@@ -223,9 +203,7 @@ nav ul li.active a {color: white !important;}
 
 .about-me .card-subtitle {font-size: 12px;color: #a8a8a8 !important;letter-spacing: 2px;}
 
-.about-me .card p.card-text {
-    color: gray
-}
+.about-me .card p.card-text { color: gray}
 
 /* End About-Me */
 
@@ -247,7 +225,6 @@ nav ul li.active a {color: white !important;}
     color: #464646;
     position: relative;
     padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 50px;
     transition: transform 0.2s linear;
     height: 75%;
@@ -270,7 +247,6 @@ nav ul li.active a {color: white !important;}
     background: #4e4e4ecc;
     color: white;
     padding: 6px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .resume .exp .item > p {
@@ -318,7 +294,6 @@ nav ul li.active a {color: white !important;}
     position: relative;
     display: none;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .portfolio .mix .overlay {
@@ -355,7 +330,6 @@ nav ul li.active a {color: white !important;}
 
 .portfolio .mix .overlay > i {
     position: absolute;
-    z-index: 333;
     color: #cbcbcb;
     cursor: pointer;
     top: 50%;
@@ -383,7 +357,6 @@ nav ul li.active a {color: white !important;}
 /*End Portfolio */
 
 /*Start Service */
-
 .service .container >  h5,
 .service .testimonials > h5 {
     letter-spacing: 2px;
@@ -396,7 +369,6 @@ nav ul li.active a {color: white !important;}
     background-color: white;
     color: #464646;
     padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 60px;
     position: relative;
     transition: transform 0.2s linear;
@@ -421,7 +393,6 @@ nav ul li.active a {color: white !important;}
     color: white;
     padding: 10px;
     border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .service .item > p {
@@ -456,7 +427,6 @@ nav ul li.active a {color: white !important;}
     padding: 15px;
     border-radius: 10px;
     width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 290px;
     overflow: auto;
 }
@@ -494,29 +464,23 @@ nav ul li.active a {color: white !important;}
 /*End Service */
 
 /*Start Contact */
-.contact .row.first {margin-bottom: 30px;}
-
-.contact iframe {width: 100%;}
+.contact iframe {width: 100%;display: block}
 
 .contact .row.second {
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     margin: 0;
     padding: 15px;
 }
 
-.contact form {}
-
 .contact form input,
 .contact form textarea,
 .contact form input:focus,
 .contact form textarea:focus{
-    background: #f9f9f9;
+    background: #4e4e4e;
     border: none;
     border-radius: 0;
     outline: none;
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
 }
 
 .contact form input::placeholder,
@@ -525,17 +489,14 @@ nav ul li.active a {color: white !important;}
     font-size: 14px;
 }
 
-.contact .item {
-    color: #4e4e4e;;
+.contact .item  {
+    color: #4e4e4e;
     position: relative;
     padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    height: 100%;
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 .contact .item  > p {
     line-height: 1.5;
@@ -549,13 +510,14 @@ nav ul li.active a {color: white !important;}
 
 /* ===================[ End Section ]===================[ */
 
-/*Custom*/
+/*Custom For Blogs*/
 @media (max-width: 380px) {
-    .about-me .coming-work .card {width: 280px !important;}
+    .about-me .blogs .card {width: 280px !important;}
 }
 
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
+
     /*About me*/
     .about-me .about-content {top: 0;left: 0;}
 
@@ -596,6 +558,6 @@ nav ul li.active a {color: white !important;}
     /*Content*/
     .content {margin-left: 0 !important;} 
 
-    .content > i.toggle-info {display: none;}
+    .content > i.toggle-info {display: none !important;}
 
 }
