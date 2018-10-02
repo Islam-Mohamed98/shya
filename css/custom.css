@@ -101,7 +101,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding: 8px;
-    background: #fe856ae6;
+    opacity: 0.9;
     border-radius: 10%;
 }
 /* End Info*/
@@ -140,11 +140,11 @@ nav ul li.active a {color: white !important;}
 /* End Navbar*/
 
 /* ===================[ Start Section ]===================[ */
-.sections {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-    background: linear-gradient(to left, #b24592, #f15f79);
-}
+.sections {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);color: white;}
+
+[data-theme-color = "orange"] .background {background: linear-gradient(to right, #ff9068, #fd746c);}
+[data-theme-color = "purple"] .background {background: linear-gradient(to left, #b24592, #f15f79);}
+[data-theme-color = "yellow"] .background {background: linear-gradient(to bottom, #ffb75e, #ed8f03);}
 
 
 .sections > div  {display: none; padding: 0 20px;color: white;}
@@ -188,7 +188,6 @@ nav ul li.active a {color: white !important;}
     border: none;
     outline: none;
     padding: 7px 10px;
-    background: linear-gradient(to right, #ff9068, #fd746c);
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

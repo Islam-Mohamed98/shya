@@ -74,7 +74,10 @@ $(function () {
 
 	$('.color-option li').click( function () {
 		$(this).addClass('active').siblings().removeClass('active');
+		$('body').attr('data-theme-color', $(this).attr('data-color'));
 	});
+
+	$('.color-option li').eq(0).click()
 	
 
 });
