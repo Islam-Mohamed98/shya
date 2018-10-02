@@ -498,7 +498,14 @@ nav ul li.active a {color: white !important;}
 
 .contact iframe {width: 100%;}
 
-.contact form {padding: 20px 0;}
+.contact .row.second {
+    box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+.contact form {}
 
 .contact form input,
 .contact form textarea,
@@ -519,13 +526,14 @@ nav ul li.active a {color: white !important;}
 }
 
 .contact .item {
-    background-color: white;
     color: #4e4e4e;;
     position: relative;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(78, 75, 75, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    height: 80%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
@@ -533,12 +541,6 @@ nav ul li.active a {color: white !important;}
     line-height: 1.5;
     letter-spacing: 3px;
     color: gray;
-}
-
-.contact .social-icons {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .contact .social-icons i {font-size: 27px;margin-left: 10px;cursor: pointer;}
