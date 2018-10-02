@@ -574,6 +574,7 @@ nav ul li.active a {color: white !important;}
 /* Start Loading Screen */
 .loading-screen {
     color: white;
+    background: linear-gradient(to right, #ff9068, #fd746c);
     position: fixed;
     width: 100%;
     height: 100%;

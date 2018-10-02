@@ -2,6 +2,18 @@ $(function () {
 
 	'use strict';
 
+	// Loading Screen
+	$(window).on('load',function () {
+
+		$('body').css('overflow', 'auto');
+
+		$('.loading-screen .sk-cube-grid').fadeOut(1000, function () {
+			$(this).parent().fadeOut(1000, function () {
+				$(this).remove();
+			});
+		});
+	});
+
 	// Option Box
 	$('.option-box .icon i').on('click',function () {$('.option-box').toggleClass('active');});
 
@@ -76,18 +88,6 @@ $(function () {
 
 	$('.color-option li').eq(0).click()
 	
-
-	// Loading Screen
-	$(window).on('load',function () {
-
-		$('body').css('overflow', 'auto');
-
-		$('.loading-screen .sk-cube-grid').fadeOut(1000, function () {
-			$(this).parent().fadeOut(1000, function () {
-				$(this).remove();
-			});
-		});
-	});
 
 
 });
